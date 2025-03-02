@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@manzar-hassan/authflow": "^1.0.5",
+    "@manzar-hassan/authflow": "file:../package/manzar-hassan-authflow-1.0.5.tgz",
     "js-cookie": "^3.0.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "22.13.5",

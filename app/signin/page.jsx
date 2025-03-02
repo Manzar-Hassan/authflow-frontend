@@ -1,10 +1,21 @@
 "use client";
 
 import { SignIn } from "@manzar-hassan/authflow";
+import { useRouter } from "next/navigation";
 import React from "react";
 
-const page = () => {
-  return <SignIn />;
+const Page = () => {
+  const router = useRouter();
+
+  return (
+    <>
+      <SignIn
+        onNavigate={(path) => router.push(path)}
+        signUpPageUrl="/signup"
+        homePageUrl="/"
+      />
+    </>
+  );
 };
 
-export default page;
+export default Page;
